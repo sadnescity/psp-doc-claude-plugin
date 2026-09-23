@@ -1,7 +1,7 @@
 {
   "name": "psp-doc",
   "description": "PSP hardware and software reference, assembled from the archived YAPSPD chapters and the uofw/upspd documents: Allegrex CPU and how it differs from the PSX R3000A, memory map, caches, hardware registers, exceptions, Graphics Engine, file formats, modules, kernel and boot.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": {
     "name": "archived from YAPSPD (groepaz/hitmen) and uofw/upspd; skills and preambles by sadnescity"
   },

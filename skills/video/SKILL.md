@@ -35,15 +35,15 @@ Writing to the VRAM Mirrors seem to have no effect; setting the drawbuffer point
 
 #### 10.2.1  VRAM
 
-![images/back.png](back.png)
+*[Figure: 512x272 colour buffer of the test scene: a shaded knot of interlocking tube rings in purple on a lavender background, with a debug timing bar along the bottom.]*
 
 ##### 10.2.1.1 [  Depth Buffer]{#sec10.2.1.1}
 
-The raw depth buffer in the normal VRAM space is rearranged in a swizzled-like way. This is the raw dump of the depth buffer converted to an 8bpp greyscale: ![images/d1.png](d1.png)
+The raw depth buffer in the normal VRAM space is rearranged in a swizzled-like way. This is the raw dump of the depth buffer converted to an 8bpp greyscale: *[Figure: the depth buffer read from normal VRAM as 8bpp greyscale: no longer recognisable as the object, just fragments cut into vertical strips and scattered across the image.]*
 
 #### 10.2.2  VRAM +2Mib
 
-VRAM with \"swizzle\" ![images/d2.png](d2.png) This is clearly a fairly simple structure, with a simple column-wise rearrangement of each 16 pixel (32 byte) strip. When rearranged, it looks as expected: ![images/sd2.png](sd2.png)
+VRAM with \"swizzle\" *[Figure: the depth buffer read through the VRAM+2MiB mirror as 8bpp greyscale: the object is broken into regular vertical stripes, 16 pixels wide, that are out of order.]* This is clearly a fairly simple structure, with a simple column-wise rearrangement of each 16 pixel (32 byte) strip. When rearranged, it looks as expected: *[Figure: the VRAM+2MiB dump after reordering the columns: a clean greyscale depth image of the ring knot on black, the same shape as the colour buffer above.]*
 
 #### 10.2.3  VRAM +4Mib
 
@@ -51,4 +51,4 @@ identical to normal VRAM
 
 #### 10.2.4  VRAM +6Mib
 
-VRAM with \"swizzle\" + 32-byte column interleave. Reading from VRAM+6Mib will give you a proper linearized version of the depth buffer with no effort. The GE sees the same view; a GE copy operation returns the same data (represented as RGB 565): ![images/readdepth.png](readdepth.png)
+VRAM with \"swizzle\" + 32-byte column interleave. Reading from VRAM+6Mib will give you a proper linearized version of the depth buffer with no effort. The GE sees the same view; a GE copy operation returns the same data (represented as RGB 565): *[Figure: 480x272 frame with the depth buffer, read via VRAM+6MiB, copied by the GE and shown as RGB565: the knot appears as green/blue banded tubes in a black rectangle drawn over the lavender scene.]*

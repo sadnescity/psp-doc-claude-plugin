@@ -7,12 +7,12 @@ description: "PSP hardware modifications: Undiluted Platinum, the Multi Firmware
 
 ### 30.1  Undiluted Platinum (UP)
 
-![images/up.jpg](up.jpg) Developer: ??? Price: around 80 Euro Features (unconfirmed):
+*[Figure: photo of the Undiluted Platinum modchip: an L-shaped black PCB with an Actel ProASIC PLUS APA075 TQ100 FPGA, a smaller square chip and a packaged chip at the top (marking illegible), and a small separate board with a mini-USB socket.]* Developer: ??? Price: around 80 Euro Features (unconfirmed):
 
 ### 30.2  0okm\'s Multi Firmware Module (MFM)
 
-![images/MFM_sample_PCB.jpg](MFM_sample_PCB.jpg)\
-![images/AS1.jpg](AS1.jpg)![images/AS2.jpg](AS2.jpg) Developer: 0okm Price: around 50USD (unconfirmed) Features (unconfirmed):
+*[Figure: photo of the MFM parts: a flat ribbon cable (printed "P-TWO AWM 20696 80C VW-1"), a bare green PCB marked "2806." and a populated one with an Altera MAX EPM3064ATC100-7 CPLD above a TSOP flash chip (marking illegible).]*\
+*[Figure: photo of the MFM board fitted inside an opened PSP beside the mainboard: the Altera MAX EPM3064ATC100-7 and the flash chip, with the ribbon cable running off at the upper left.]*  *[Figure: the same installation with the metal shield back in place over it; the ribbon cable is visible at the left.]* Developer: 0okm Price: around 50USD (unconfirmed) Features (unconfirmed):
 
 - ALTERA MAX 3000A Cost-Optimized CPLD
 - 480 Mbps High Speed USB 2.0(PSP built-in)
@@ -24,16 +24,16 @@ description: "PSP hardware modifications: Undiluted Platinum, the Multi Firmware
 
 #### 30.3.1  Nem
 
-![images/flash_nem.jpg](flash_nem.jpg)
+*[Figure: photo of a PSP mainboard with dozens of thin enamelled wires soldered to it, held down with tape and glue, running off the board.]*
 
 #### 30.3.2  0okm
 
-![images/flash_0okm.jpg](flash_0okm.jpg)
+*[Figure: photo of a mainboard with two rows of pin headers glued down next to the large Sony chips, wired to the board with thin wires.]*
 
 #### 30.3.3  Booster
 
-![images/flash_booster.png](flash_booster.png)
+*[Figure: photo of a PSP mainboard on a desk, wired to a small interface board with a cable plugged in and crocodile clips.]*
 
 #### 30.3.4  ryoko no usagi
 
-![images/flash_ryoko_no_usagi.jpg](flash_ryoko_no_usagi.jpg)
+*[Figure: photo of a PSP mainboard with a bundle of thin yellow wires soldered near its centre, the loose ends spread out.]*

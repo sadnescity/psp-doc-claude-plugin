@@ -1,0 +1,1 @@
+*[Figure: photo of the Undiluted Platinum modchip: an L-shaped black PCB with an Actel ProASIC PLUS APA075 TQ100 FPGA, a smaller square chip and a packaged chip at the top (marking illegible), and a small separate board with a mini-USB socket.]*

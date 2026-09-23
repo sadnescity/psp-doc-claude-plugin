@@ -9,7 +9,7 @@ description: "PSP mainboard revisions and chips, the WiFi daughterboard, the hea
 
 #### 3.1.1  Revisions
 
-**3.1.1.1 [  TA-079]{#sec3.1.1.1}  ** Flash/SDRAM: K5E5658HCM-D060 (3.0V/2.5V) ![images/TA-079-3a.jpg](TA-079-3a.jpg)**3.1.1.2 [  TA-080]{#sec3.1.1.2}  ** **3.1.1.3 [  TA-081]{#sec3.1.1.3}  ** **3.1.1.4 [  TA-082]{#sec3.1.1.4}  ** CPU Core : CXD2967GG Media Engine : CXD5026-203GG Flash/SDRAM: K5E5658ACM-D060 (1.8V/1.8V) ![images/PSP-ta082.jpg](PSP-ta082.jpg) You can identify this Motherboard by opening the UMD door and looking for the IC1003 label: ![images/TA-082-3b.jpg](TA-082-3b.jpg)**3.1.1.5 [  TA-086]{#sec3.1.1.5}  ** CPU Core : CXD2967GG Media Engine : CXD5026-203GG MCP : K5E5658ACM-D060 1.8V/1.8V ![images/TA-086small.png](TA-086small.png)
+**3.1.1.1 [  TA-079]{#sec3.1.1.1}  ** Flash/SDRAM: K5E5658HCM-D060 (3.0V/2.5V) *[Figure: photo of part of a TA-079 mainboard. The silkscreen board ID "TA-079" (with "1-864-275-11" beside it) and the "IC1003" label at the top edge are circled in red.]* **3.1.1.2 [  TA-080]{#sec3.1.1.2}  ** **3.1.1.3 [  TA-081]{#sec3.1.1.3}  ** **3.1.1.4 [  TA-082]{#sec3.1.1.4}  ** CPU Core : CXD2967GG Media Engine : CXD5026-203GG Flash/SDRAM: K5E5658ACM-D060 (1.8V/1.8V) *[Figure: photo of part of a TA-082 mainboard. Circled in red: the silkscreen "TA-082 1-867-950-11" and, on the two large Sony Computer Entertainment BGA packages, the part numbers "CXD2967GG" (CPU) and "CXD5026..." (Media Engine; the rest of the marking is blanked out).]* You can identify this Motherboard by opening the UMD door and looking for the IC1003 label: *[Figure: photo into the open UMD bay: the drive's metal chassis with the laser pickup and spindle motor. In the top-right corner, through a gap in the chassis, the "IC1003" silkscreen on the green mainboard is circled in red.]* **3.1.1.5 [  TA-086]{#sec3.1.1.5}  ** CPU Core : CXD2967GG Media Engine : CXD5026-203GG MCP : K5E5658ACM-D060 1.8V/1.8V *[Figure: photo of a TA-086 mainboard. Readable markings: Samsung "K5E5658ACM-D060" (MCP), Sony Computer Entertainment "CXD2967GG ©2006SCEI" (CPU), Sony Computer Entertainment "CXD5026 -203GG ©2005SCEI" (Media Engine), and IC1001, IC7001, IC9502 on the silkscreen. Circled in red: "TA-086" (board number "1-871-690-41") and "IC1003" at the left edge.]*
 
 #### 3.1.2  Semiconductors
 
@@ -133,7 +133,27 @@ description: "PSP mainboard revisions and chips, the WiFi daughterboard, the hea
   \
   This is the pad layout on the PCB, in the PSP\'s natural orientation, with the main processor off to the left:\
   \
-  ![images/pinout.png](pinout.png)\
+
+  *[Figure: ball layout of the 137-ball Samsung MCP on the PCB, PSP in its natural orientation, main processor to the left. Rows A-R (no I, O, Q), columns 1-10. NAND balls are marked (N); all other named balls are DDR; "-" means no ball.]*
+
+  |   | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+  |---|---|---|---|---|---|---|---|---|---|---|
+  | A | - | DNU | - | - | - | - | - | - | DNU | DNU |
+  | B | A9 | A5 | CKE | CLE (N) | Vcc (N) | /WEn (N) | /RE (N) | Vdd | Vss | NC |
+  | C | Vss | A4 | /WP (N) | ALE (N) | Vss (N) | /CE (N) | DQ31 | DQ30 | Vddq | Vssq |
+  | D | Vdd | A8 | NC | R/B (N) | DQ25 | DQ27 | DQ29 | DQ28 | Vssq | Vddq |
+  | E | A7 | A11 | NC | DQ18 | DQS3 | DQ22 | DM3 | DQ26 | Vddq | Vssq |
+  | F | CK | A6 | NC | DQ17 | DQ19 | DQ24 | DQ23 | DM2 | Vssq | Vddq |
+  | G | /CK | /RAS | DQ15 | DQ16 | DQS1 | DM1 | DQ9 | NC | Vddq | Vssq |
+  | H | Vdd | /CAS | DQ20 | DQ21 | DQ13 | DQ12 | DQS2 | NC | Vss | Vdd |
+  | J | Vss | /CS | NC | DQ14 | DQ11 | DQ10 | DQS0 | DM0 | Vssq | Vddq |
+  | K | /WEd | BA0 | NC | NC | DQ7 | DQ8 | DQ6 | DQ4 | Vddq | Vssq |
+  | L | BA1 | A12 | NC | DQ0 | DQ1 | DQ2 | DQ3 | DQ5 | Vddq | Vssq |
+  | M | Vdd | Vss | NC | NC | IO3 (N) | IO5 (N) | NC | IO7 (N) | Vssq | Vddq |
+  | N | A1 | A10 | IO2 (N) | IO0 (N) | Vcc (N) | IO6 (N) | NC | NC | Vddq | Vssq |
+  | P | A0 | A2 | A3 | IO1 (N) | NC | Vss (N) | IO4 (N) | Vdd | Vss | NC |
+  | R | DNU | DNU | - | - | - | - | - | - | DNU | DNU |
+
   \
   +:--------------------------------------------------------------------------------------------------------------------:+
   |   ---------------- ------ ------------------------------------------------------------------------------------------ |
@@ -293,7 +313,7 @@ The WIFI module is mounted on the underside of the SIRCS / Memory Stick daughter
 
 ### 3.3  Headphones/Remote Control
 
-The headphone jack is a standard 3.5mm stereo, but there is also a small 6 pin connector next to it for the \"remote control\" that is included in the Value Pack. If we assume the following pin numbering (socket in the PSP as viewed from the outside): ![images/remocon.png](remocon.png)\
+The headphone jack is a standard 3.5mm stereo, but there is also a small 6 pin connector next to it for the \"remote control\" that is included in the Value Pack. If we assume the following pin numbering (socket in the PSP as viewed from the outside): *[Figure: the remote socket seen from outside: the round headphone jack (HP) on the left, and to its right a rectangular 6-pin connector, pins 1 2 3 on the top row and 4 5 6 on the bottom row, numbered left to right.]*\
 Then the pinout is as follows (tip/ring/sleeve refers to the three parts of the stereo jack)\
 
 +:---------------------------------------------------------------------------------------------------------------------:+
@@ -322,7 +342,7 @@ If a jack is plugged in and the PSP is turned on, things become interesting:
 
 ### 3.4  Memory Stick
 
-![images/mstick_10p.png](mstick_10p.png)\
+*[Figure: Memory Stick contact side: ten contacts in a row, pin 1 at the left end and pin 10 at the right.]*\
 
 +:---------------------------------------------------------------------:+
 |   --------- ------------ --------------------------------------       |

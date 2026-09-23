@@ -1,0 +1,1 @@
+*[Figure: photo of the MFM parts: a flat ribbon cable (printed "P-TWO AWM 20696 80C VW-1"), a bare green PCB marked "2806." and a populated one with an Altera MAX EPM3064ATC100-7 CPLD above a TSOP flash chip (marking illegible).]*

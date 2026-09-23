@@ -36,6 +36,6 @@ besides freely available datasheets and patents, this document was created based
 note: various other info was taken from various other people/posts from ps2dev forum. i don\'t remember them all, bear with me :) let me know if you feel you should be credited for something specific and i\'ll add it. Some more credits can also be found in the changelog file.\
 moreover, many thanks must go to everyone who helped making this document more consistant and error free by proofreading and pointing out mistakes, in particular Skywalker, Jihad, xor37h, Tyranid, bri3d \...\
 
-![images/logo.jpg](logo.jpg)
+*[Figure: the Hitmen logo: "HITMEN" in outlined letters beside a star with a stylised head.]*
 
 \

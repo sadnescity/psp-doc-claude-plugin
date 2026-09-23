@@ -1,0 +1,1 @@
+*[Figure: photo of a TA-086 mainboard. Readable markings: Samsung "K5E5658ACM-D060" (MCP), Sony Computer Entertainment "CXD2967GG ©2006SCEI" (CPU), Sony Computer Entertainment "CXD5026 -203GG ©2005SCEI" (Media Engine), and IC1001, IC7001, IC9502 on the silkscreen. Circled in red: "TA-086" (board number "1-871-690-41") and "IC1003" at the left edge.]*

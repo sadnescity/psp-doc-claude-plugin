@@ -1,0 +1,1 @@
+*[Figure: 480x272 frame with the depth buffer, read via VRAM+6MiB, copied by the GE and shown as RGB565: the knot appears as green/blue banded tubes in a black rectangle drawn over the lavender scene.]*

@@ -1,0 +1,1 @@
+*[Figure: the remote socket seen from outside: the round headphone jack (HP) on the left, and to its right a rectangular 6-pin connector, pins 1 2 3 on the top row and 4 5 6 on the bottom row, numbered left to right.]*

@@ -1,0 +1,1 @@
+*[Figure: photo of part of a TA-082 mainboard. Circled in red: the silkscreen "TA-082 1-867-950-11" and, on the two large Sony Computer Entertainment BGA packages, the part numbers "CXD2967GG" (CPU) and "CXD5026..." (Media Engine; the rest of the marking is blanked out).]*

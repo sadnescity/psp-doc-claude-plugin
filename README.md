@@ -25,6 +25,11 @@ between the frontmatter and the archived text — what the chapter really covers
 what it is good for, and where it is thin or overlaps another skill. The text
 below the preamble stays as it was written, so it can still be quoted.
 
+The source's images are not shipped. `figures/<file>.md` holds a text rendering
+of each one (pin tables and block diagrams transcribed, photos described), and
+the build puts it where the `![](file)` reference was; an image without one
+stops the build.
+
 ## Why it is worth having
 
 The PSP is not a PSX with a bigger screen: the CPU is an Allegrex, a MIPS32

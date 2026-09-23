@@ -27,6 +27,10 @@ SKILLS = os.path.join(HERE, "skills")
 # the frontmatter. The body below it stays the source text, so the chapter can
 # still be quoted; the preamble is where the orientation goes.
 INTRO = os.path.join(HERE, "intro")
+# The images of the source are not shipped: figures/<file>.md holds a text
+# rendering of each one (a transcribed table, a described diagram or photo),
+# which takes the place of the ![](file) reference.
+FIGURES = os.path.join(HERE, "figures")
 # Skills written by us rather than converted: copied over the generated ones, so
 # that wiping skills/ and rebuilding cannot lose them.
 HANDWRITTEN = os.path.join(HERE, "handwritten")
@@ -197,7 +201,34 @@ def build():
             scrivi(nome, descr, corpo)
 
 
+def figure(corpo):
+    """Replace every image reference with the text in figures/<file>.md."""
+    def sost(m):
+        indent = m.group(1) or ""     # only when the image starts its line
+        p = os.path.join(FIGURES, os.path.basename(m.group(2)) + ".md")
+        if not os.path.exists(p):
+            raise SystemExit("figura senza testo: %s (scrivi %s)" % (m.group(2), p))
+        testo = open(p, encoding="utf-8").read().strip()
+        if "\n" not in testo:
+            # keep it apart from the text or the next image around it, or
+            # the closing * runs into a ** and the emphasis breaks
+            prima = m.string[m.start() - 1:m.start()]
+            dopo = m.string[m.end():m.end() + 1]
+            if prima and not prima.isspace():
+                testo = " " + testo
+            if not m.group(3) and dopo and not dopo.isspace():
+                testo += " "
+            return indent + testo + (m.group(3) or "")
+        # a table or a list needs a block of its own, at the indentation of
+        # the line the image was on (it can sit inside a list item)
+        righe = [(indent + r) if r else "" for r in testo.split("\n")]
+        return "\n\n" + "\n".join(righe) + "\n\n"
+    corpo = re.sub(r'(?m)(^[ \t]*)?!\[[^\]]*\]\(([^)\s]+)\)(\\?\n)?', sost, corpo)
+    return re.sub(r'\n{3,}', '\n\n', corpo)
+
+
 def scrivi(nome, descr, corpo):
+    corpo = figure(corpo)
     cappello = os.path.join(INTRO, nome + ".md")
     if os.path.exists(cappello):
         corpo = open(cappello, encoding="utf-8").read().strip() + "\n\n---\n\n" + corpo

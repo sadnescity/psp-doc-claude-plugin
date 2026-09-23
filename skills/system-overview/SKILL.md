@@ -24,7 +24,19 @@ for anything you intend to address.
 
 ## 2  System Overview
 
-![images/kaigai_3a.png](kaigai_3a.png)
+*[Figure: PSP system block diagram.]*
+
+- Main system bus, connecting:
+  - Mobile DDR I/F, to the Main Memory (DDR DRAM, 32MB / 256Mbit)
+  - Graphics Core, 166MHz, with VRAM (eDRAM, 2MB), which drives the TFT (480x272)
+  - DMAC
+  - CPU Core (MIPS R4000, 333MHz) with data and instruction caches, and the Vector FPU and FPU attached to it
+  - AVC Decoder (MPEG4, labelled "H.246")
+  - VME (Virtual Mobile Engine) sound core, reconfigurable DSP, 166MHz
+  - Media Engine (MIPS R4000, 333MHz) with data and instruction caches
+  - Sub Memory (eDRAM, 2MB)
+- A dashed arrow runs from the AVC Decoder to the Media Engine.
+- A peripheral bus beside the DMAC carries the RTC, Timer, Security System (AES Crypto) and the I/O lines: Communication, Sensor/Actuator, Memory Stick/USB, Keypad/Analog Joystick, Future Extension.
 
 ### 2.1  Playstation Portable Main Unit
 
@@ -147,7 +159,7 @@ the Letter in the 3rd Line indicates the Firmware that is preinstalled:
 
 #### 2.4.6  USB microphone (PSP-240(X))
 
-![images/psp240x.jpg](psp240x.jpg)
+*[Figure: photo of the PSP-240 USB microphone from three sides: a small silver bar with two thumbscrews and a connector in the middle; "SONY" is legible.]*
 
 - monaural condenser microphone
 - weight approximately 6 grams
@@ -155,14 +167,14 @@ the Letter in the 3rd Line indicates the Firmware that is preinstalled:
 
 #### 2.4.7  GPS receiver
 
-![images/gps_qjpreviewth.jpg](gps_qjpreviewth.jpg)
+*[Figure: photo of the GPS receiver: a white upright module marked "GPS" with a satellite icon, clamped to the top edge of a PSP with a thumbscrew.]*
 
 - will feature support for GPS-enabled games such as a projected re-release or update of Hot Shot Golf, as well in Metal Gear Solid: Portable Ops.
 - The GPS is set to be priced around ¥6,000, appx. \$54 USD.
 
 #### 2.4.8  Camera
 
-![images/psp_screen001.jpg](psp_screen001.jpg)
+*[Figure: small, blurry photo of the camera: a silver clip-on unit with a round lens in the middle.]*
 
 - add-on will support a new video and VoIP chat service, as well as photo taking.
 - The camera was released in Japan in early November 2006 for around ¥5,000, appx. \$44 USD
