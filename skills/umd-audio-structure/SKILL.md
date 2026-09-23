@@ -1,6 +1,6 @@
 ---
 name: umd-audio-structure
-description: "How a UMD audio disc is laid out."
+description: "How a PSP UMD audio disc is laid out."
 ---
 
 ## 25  UMD Audio Structure

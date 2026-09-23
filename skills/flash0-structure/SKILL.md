@@ -1,6 +1,6 @@
 ---
 name: flash0-structure
-description: "What lives in flash0, the system partition: files, modules and fonts."
+description: "What lives in flash0, the PSP system partition: certificates, dictionaries, system fonts, kernel modules and boot configurations (pspbtcnf), VSH modules and resources. Use when looking for a firmware module, a system font or a boot configuration file."
 ---
 
 ## 20  Flash Memory Structure (flash0)

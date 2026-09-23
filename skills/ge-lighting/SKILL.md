@@ -1,6 +1,6 @@
 ---
 name: ge-lighting
-description: "GE commands for lighting and materials: shading mode, material colours, ambient, diffuse, specular, light types, positions, directions, attenuation and per-light colours."
+description: "GE commands for lighting and materials: shading mode, material colours, ambient, diffuse, specular, light types, positions, directions, attenuation and per-light colours. Use when a model is lit or coloured wrongly, or when reading the lighting commands of a display list."
 ---
 
 GE commands 0x50 to 0x9A: the shade model, the material colours (emissive,

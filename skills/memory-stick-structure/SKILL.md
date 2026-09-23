@@ -1,6 +1,6 @@
 ---
 name: memory-stick-structure
-description: "The directory layout the PSP expects on a Memory Stick: saves, games, photos and music."
+description: "The directory layout the PSP expects on a Memory Stick: saves, games, music, photos and the other root folders. Use when locating save data or a game on a Memory Stick."
 ---
 
 Chapter 22, a directory map of the Memory Stick as early firmware used it: /PSP

@@ -1,6 +1,6 @@
 ---
 name: hardware-overview
-description: "Mainboard, chips and WiFi hardware. Use when identifying a component or tracing a signal on the board."
+description: "PSP mainboard revisions and chips, the WiFi daughterboard, the headphone remote, Memory Stick and Talkman microphone hardware. Use when identifying a component or tracing a signal on the board."
 ---
 
 ## 3  Hardware Overview

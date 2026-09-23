@@ -1,6 +1,6 @@
 ---
 name: hardware-registers-crypto-io
-description: "PSP hardware registers, second half: the KIRK decryption engine, GPIO and the two UARTs, including the headphone/remote SIO."
+description: "PSP hardware registers, second half: the KIRK decryption engine, GPIO and the two UARTs, including the headphone/remote SIO. Use when following how an EBOOT, a save or a UMD is decrypted, or when working with the remote's serial port."
 ---
 
 The rest of YAPSPD's chapter 8: the KIRK crypto engine at 0xBDE00000, GPIO, and

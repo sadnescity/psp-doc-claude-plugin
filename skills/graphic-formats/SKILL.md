@@ -1,6 +1,6 @@
 ---
 name: graphic-formats
-description: "Image and font formats the PSP uses, and how pixels are stored. Use when converting a texture or a font."
+description: "PSP pixel formats: the bit layout of the direct colour formats (1555, 4444, 565 and 8888), texture swizzling, and the PSP's DXT1/DXT3/DXT5 block layout. Use when decoding a texture or CLUT dumped from VRAM, or when a swizzled texture comes out shredded. Font formats (PGF) are in file-formats."
 ---
 
 Chapter 27 is the pixel-level companion to the GE chapter: the bit layout of the
@@ -14,7 +14,7 @@ CLUT entry formats. The swizzling section is the one that matters when a font or
 a menu texture dumped out of VRAM comes back shredded - the GE works in blocks of
 16 bytes by 8 rows, and a swizzled texture has been reordered into them.
 
-Despite the skill description, there is nothing here about font formats: the PGF
+There is nothing here about font formats: the PGF
 file format is in file-formats. Nor is there anything on how the indexed formats
 pack their pixels, and 27.6.2 DXT3 is an empty heading covered under DXT5.
 

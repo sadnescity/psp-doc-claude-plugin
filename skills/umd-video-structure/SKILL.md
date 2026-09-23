@@ -1,6 +1,6 @@
 ---
 name: umd-video-structure
-description: "How a UMD video disc is laid out."
+description: "How a PSP UMD video disc is laid out."
 ---
 
 ## 24  UMD Video Structure

@@ -1,6 +1,6 @@
 ---
 name: kernel
-description: "The kernel: modules, threads, syscalls and services. Use when a call goes into the firmware rather than the game."
+description: "PSP kernel chapter: device and filesystem names (msstor:, ms0:, umd0:, isofs:, flash0:, flash1:, host0:), the layout of kernel return codes with the table of error values, and the firmware history from 1.0 to 3.03 with the early exploits. Use when turning a negative return value into an error name, or when working out which device a path reads from. Nothing on threads, syscalls or sceKernel functions: see modules-and-patching."
 ---
 
 Chapter 29, and the title oversells it. What is here is device and filesystem

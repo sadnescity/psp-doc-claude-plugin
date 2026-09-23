@@ -1,6 +1,6 @@
 ---
 name: modchips
-description: "Hardware modifications. Historical."
+description: "PSP hardware modifications: Undiluted Platinum, the Multi Firmware Module and homemade flash interfaces. Historical."
 ---
 
 ## 30  Modchips

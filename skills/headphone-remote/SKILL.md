@@ -1,6 +1,6 @@
 ---
 name: headphone-remote
-description: "The headphone and remote control port."
+description: "The PSP headphone and remote control port: audio input and the remote's serial communication. Use when working with the remote or its SIO protocol."
 ---
 
 ## 18  Headphone/Remote Control

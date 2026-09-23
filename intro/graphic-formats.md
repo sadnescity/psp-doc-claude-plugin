@@ -9,6 +9,6 @@ CLUT entry formats. The swizzling section is the one that matters when a font or
 a menu texture dumped out of VRAM comes back shredded - the GE works in blocks of
 16 bytes by 8 rows, and a swizzled texture has been reordered into them.
 
-Despite the skill description, there is nothing here about font formats: the PGF
+There is nothing here about font formats: the PGF
 file format is in file-formats. Nor is there anything on how the indexed formats
 pack their pixels, and 27.6.2 DXT3 is an empty heading covered under DXT5.

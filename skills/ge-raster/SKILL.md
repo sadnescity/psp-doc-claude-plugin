@@ -1,6 +1,6 @@
 ---
 name: ge-raster
-description: "GE commands for rasterisation and testing: pixel format, clear mode, scissor, depth range, colour and alpha tests, stencil, blending, dithering, logic op, masks, and the block transfer commands. Also the texture cache and memory bandwidth notes."
+description: "GE commands for rasterisation and testing: pixel format, clear mode, scissor, depth range, colour and alpha tests, stencil, blending, dithering, logic op, masks, and the block transfer commands. Also the texture cache and memory bandwidth notes. Use when working out why pixels are clipped, discarded, blended or copied the way they are."
 ---
 
 GE commands 0xD2 to 0xEE, the per-pixel end of the pipeline: PSM for the frame

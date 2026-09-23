@@ -1,6 +1,6 @@
 ---
 name: flash1-structure
-description: "What lives in flash1, the settings partition."
+description: "What lives in flash1, the PSP settings partition: dictionaries, the system registry and VSH themes. Use when looking for system settings in a flash dump."
 ---
 
 ## 21  Flash Memory Structure (flash1)

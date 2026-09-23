@@ -1,6 +1,6 @@
 ---
 name: video
-description: "Video processing: display modes, VRAM layout, framebuffer formats and the display list of the LCD controller. Use when reading pixels out of VRAM or working out a framebuffer address."
+description: "PSP VRAM basics: VRAM at 0x04000000, the 16- and 32-bit pixel formats, the 480x272 screen inside a 512-pixel virtual width, and the four VRAM mirrors, one of which hands back a linearised depth buffer. Use when turning a framebuffer or texture address into pixels or back, or reading the depth buffer out of VRAM. Display modes and the LCD controller are not here: see psptek-registers."
 ---
 
 Chapter 10 is short: VRAM at 0x04000000, 16-bit BGR or 32-bit pixels, a 480x272

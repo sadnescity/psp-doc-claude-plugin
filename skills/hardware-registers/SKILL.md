@@ -1,6 +1,6 @@
 ---
 name: hardware-registers
-description: "PSP hardware registers, first half: thread manager, system config, interrupt manager, profiler, Media Engine control and NAND flash, with addresses and bit fields."
+description: "PSP hardware registers, first half: memory protection, system config, interrupt controller, profiler, Media Engine control and NAND flash, with addresses and bit fields. Use when a routine stores somewhere in the 0xBC000000-0xBFFFFFFF range and you need the device behind it; psptek-registers is fuller on most of these."
 ---
 
 The first half of YAPSPD's chapter 8: memory protection at 0xBC000000, system

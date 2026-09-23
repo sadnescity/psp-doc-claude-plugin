@@ -1,6 +1,6 @@
 ---
 name: flash-memory
-description: "The internal flash: chips, partitions and how they are addressed."
+description: "The PSP internal NAND flash: physical layout, user and spare areas, the IPL area, ID storage and the FAT partitions. Use when reading a NAND dump or locating the IPL or ID storage in it."
 ---
 
 ## 19  Flash Memory

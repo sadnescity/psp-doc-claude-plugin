@@ -1,6 +1,6 @@
 ---
 name: media-engine
-description: "The Media Engine, the second Allegrex core: its memory, how it is started and how the two CPUs talk. Use when code runs on the ME rather than the main CPU."
+description: "The Media Engine, the PSP's second Allegrex core: its memory maps, its COP0 registers, and how code tells which core it runs on. Use when code runs on the ME rather than the main CPU. Starting the ME and signalling between the CPUs are in hardware-registers and exceptions."
 ---
 
 YAPSPD's chapter 5, and one of the thinnest in the book: four observations

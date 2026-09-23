@@ -1,6 +1,6 @@
 ---
 name: system-overview
-description: "PSP models, specifications and accessories. Use for the shape of the machine: CPU and bus speeds, memory sizes, screen, what each model has."
+description: "PSP-1000 specification sheet: CPU and bus clocks, memory sizes, screen, model and box codes, and accessories. Use for the shape of the machine. Later models are covered in psptek-registers."
 ---
 
 YAPSPD's chapter 2, a spec sheet for the PSP-1000: the two Allegrex cores and

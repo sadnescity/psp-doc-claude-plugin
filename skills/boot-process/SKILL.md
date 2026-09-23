@@ -1,6 +1,6 @@
 ---
 name: boot-process
-description: "From power on to the game: IPL, the loaders and the order modules start in."
+description: "PSP boot sequence: cold boot through the embedded bootstrap and the IPL stages to the VSH, and Load Exec, the full reboot into game mode off pspbtcnf_game.txt. Use when working out which kernel modules a game runs against, or what happens between sceKernelLoadExec and the game. How BOOT.BIN itself is loaded is not covered."
 ---
 
 Chapter 28, one of the shortest in YAPSPD: cold boot in three stages, where the

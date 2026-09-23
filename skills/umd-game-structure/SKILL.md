@@ -1,6 +1,6 @@
 ---
 name: umd-game-structure
-description: "How a UMD game disc is laid out: the ISO, PARAM.SFO, the EBOOT and the data files."
+description: "How a PSP UMD game disc is laid out: the PSP_GAME tree, UMD_DATA.BIN, the XMB metadata files and PARAM.SFO, SYSDIR with BOOT.BIN and EBOOT.BIN, and USRDIR. Use when finding the executable to patch or the game's data files on a UMD image. Nothing on ISO9660 or the sector layout."
 ---
 
 Chapter 23, fifty lines of which half are a file list: the /PSP_GAME tree, the

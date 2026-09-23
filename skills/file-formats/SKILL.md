@@ -1,6 +1,6 @@
 ---
 name: file-formats
-description: "PSP file formats: PBP, PRX and ELF, PARAM.SFO, saves and their encryption. Use when reading or rebuilding an executable, or when a relocation has to be resolved by hand."
+description: "PSP file formats: PRX sections, export and import tables, the custom relocation format and the ~PSP header of encrypted executables, then PBP, PARAM.SFO, PSAR and the PGF font format. Use when reading or rebuilding an executable, or when a relocation has to be resolved by hand."
 ---
 
 Chapter 26, a catalogue of formats whose centre of gravity is the PRX section:

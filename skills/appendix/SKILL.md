@@ -1,6 +1,6 @@
 ---
 name: appendix
-description: "Tables and odds and ends that did not fit the other chapters."
+description: "PSP appendix: a GCC and binutils quick how-to (compile, link, strip, convert to a plain binary, addr2line, building a cross compiler, linker script, startup code), plus lists of games and developers. Use when setting up a toolchain to build PSP code."
 ---
 
 ## 31  Appendix
